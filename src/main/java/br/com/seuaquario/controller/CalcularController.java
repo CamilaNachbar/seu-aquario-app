@@ -23,7 +23,6 @@ public class CalcularController {
 
 	@PostMapping(value = "/calcular/litragem")
 	public Aquario calcularDimensoesESubstrato(@RequestBody Dimensoes dimensoes) {
-		
 		return calcular.aquarioDimensoes(dimensoes);
 
 	}
