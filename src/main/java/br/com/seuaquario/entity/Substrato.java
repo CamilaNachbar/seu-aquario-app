@@ -15,5 +15,6 @@ public class Substrato {
 	
 	public Long quantidade;
 	public String tipo;
+	public String observacoes;
 
 }

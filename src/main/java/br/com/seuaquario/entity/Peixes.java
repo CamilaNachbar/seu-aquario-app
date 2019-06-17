@@ -10,13 +10,17 @@ import br.com.seuaquario.enums.Comportamento;
  */
 public class Peixes {
 
+	public String codigoPeixe;
 	public String nomePopular;
 	public String nomeCientifico;
 	public String observacoes;
 	public Comportamento comportamento;
 	public Long phMinimo;
 	public Long phMaximo;
-	public String litragem;
-	public String litragemAdicionalPorPeixe;
+	public Double litragem;
+	public Double litragemAdicionalPorPeixe;
+	public int dificuldade; //5 o maximo de dificuldade
+	public boolean peixeUnico; // false para aquario comunitario
+	
 
 }
