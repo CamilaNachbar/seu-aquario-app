@@ -18,6 +18,7 @@ public class Aquario {
 	private Long litragem;
 	private Dimensoes dimensoes;
 	private Substrato substrato;
+	private Cascalho cascalho;
 	private List<Peixes> peixes;
 	private RangeDeQualidade range;
 }
