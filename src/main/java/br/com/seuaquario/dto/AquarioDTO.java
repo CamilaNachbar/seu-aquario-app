@@ -1,24 +1,28 @@
-/**
- * 
- */
-package br.com.seuaquario.entity;
+package br.com.seuaquario.dto;
 
 import java.util.List;
 
-/**
- * @author Camila Nachbar- 13 de jun de 2019
- */
+import javax.validation.constraints.NotNull;
 
-public class Aquario {
+import br.com.seuaquario.entity.Cascalho;
+import br.com.seuaquario.entity.Dimensoes;
+import br.com.seuaquario.entity.Peixes;
+import br.com.seuaquario.entity.RangeDeQualidade;
+import br.com.seuaquario.entity.Substrato;
 
+public class AquarioDTO {
+	
 	private String id;
+	@NotNull
 	private String nomeDoAquario;
+	@NotNull
 	private Long litragem;
 	private Dimensoes dimensoes;
 	private Substrato substrato;
 	private Cascalho cascalho;
 	private List<Peixes> peixes;
 	private RangeDeQualidade range;
+	@NotNull
 	private String imagem;
 
 	public String getId() {
@@ -92,4 +96,5 @@ public class Aquario {
 	public void setImagem(String imagem) {
 		this.imagem = imagem;
 	}
+
 }
