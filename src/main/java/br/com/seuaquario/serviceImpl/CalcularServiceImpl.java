@@ -3,13 +3,15 @@
  */
 package br.com.seuaquario.serviceImpl;
 
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 
 import br.com.seuaquario.entity.Aquario;
 import br.com.seuaquario.entity.Dimensoes;
 import br.com.seuaquario.entity.Substrato;
 import br.com.seuaquario.service.CalcularService;
-import ch.qos.logback.core.pattern.parser.Parser;
 
 /**
  * @author Camila Nachbar 13 de jun de 2019
@@ -29,6 +31,12 @@ public class CalcularServiceImpl implements CalcularService {
 		aquario.setSubstrato(substrato);
 		
 		return aquario; 
+	}
+
+	@Override
+	public ResponseEntity<?> salvarAquario(List<Aquario> aquario) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

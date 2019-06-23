@@ -13,11 +13,13 @@ public class Usuario {
 
 	private String nome;
 	private String sobrenome;
+	private String username;
 	private Date dataNascimento;
 	private String documento;
 	private String cidade;
 	private String estado;
 	private List<Aquario> aquarios;
+	private String password;
 
 	public String getNome() {
 		return nome;
@@ -73,5 +75,21 @@ public class Usuario {
 
 	public void setAquarios(List<Aquario> aquarios) {
 		this.aquarios = aquarios;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 }
