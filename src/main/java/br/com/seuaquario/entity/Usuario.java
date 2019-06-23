@@ -6,9 +6,12 @@ package br.com.seuaquario.entity;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 /**
  * @author Camila Nachbar - cshebling@stefanini.com - 62106 17 de jun de 2019
  */
+@Document
 public class Usuario {
 
 	private String nome;

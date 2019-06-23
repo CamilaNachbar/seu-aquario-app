@@ -3,9 +3,12 @@
  */
 package br.com.seuaquario.entity;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 /**
  * @author Camila Nachbar - cshebling@stefanini.com - 62106 13 de jun de 2019
  */
+@Document
 public class Dimensoes {
 
 	private Long largura;

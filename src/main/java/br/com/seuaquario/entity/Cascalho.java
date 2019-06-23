@@ -3,10 +3,12 @@
  */
 package br.com.seuaquario.entity;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 /**
  * @author Camila Nachbar 17 de jun de 2019
  */
-
+@Document
 public class Cascalho {
 
 	private String nome;

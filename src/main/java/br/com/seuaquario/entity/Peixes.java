@@ -3,12 +3,14 @@
  */
 package br.com.seuaquario.entity;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import br.com.seuaquario.enums.Comportamento;
 
 /**
  * @author Camila Nachbar - 13 de jun de 2019
  */
-
+@Document
 public class Peixes {
 
 	private String codigoPeixe;
