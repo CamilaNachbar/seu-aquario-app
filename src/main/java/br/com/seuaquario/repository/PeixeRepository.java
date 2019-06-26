@@ -5,13 +5,11 @@ import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.seuaquario.entity.Aquario;
 import br.com.seuaquario.entity.Peixes;
 
 @Repository
-public interface AquarioRepository extends MongoRepository<Aquario, String> {
+public interface PeixeRepository extends MongoRepository<Peixes, String> {
 
-	List<Aquario> findAquarioByListaPeixe(List<Peixes> peixes);
+	public List<Peixes> findByName(String nome);
 
-	List<Aquario> findByLitragem(String litragem);
 }
