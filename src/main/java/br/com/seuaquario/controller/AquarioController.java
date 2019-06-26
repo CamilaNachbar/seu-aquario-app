@@ -36,11 +36,11 @@ public class AquarioController {
 	}
 
 	@GetMapping(value = "/busca/aquario/litragem")
-	public ResponseEntity<?> salvar(@RequestBody String litragem) {
+	public ResponseEntity<?> listaAquarioLitragem(@RequestBody String litragem) {
 		return new ResponseEntity<>(aquarioService.listByLitragem(litragem), HttpStatus.CREATED);
 	}
 
-	@GetMapping(value = "/busca/aquario/litragem")
+	@GetMapping(value = "/busca/aquario/peixes")
 	public ResponseEntity<?> listaAquarioPorPeixes(@RequestBody List<Peixes> peixes) {
 		return new ResponseEntity<>(aquarioService.listByPeixe(peixes), HttpStatus.CREATED);
 	}

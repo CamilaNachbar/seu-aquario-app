@@ -43,8 +43,9 @@ public class AquarioService {
 		}
 	}
 
+	//TODO
 	public List<Aquario> listByPeixe(List<Peixes> peixe) {
-		return aquarioRepository.findAquarioByListaPeixe(peixe);
+		return null;
 	}
 
 	public List<Aquario> listByLitragem(String litragem) {

@@ -22,7 +22,7 @@ public class Peixes {
 	private Comportamento comportamento;
 	private Long phMinimo;
 	private Long phMaximo;
-	private String alimentação;
+	private String alimentacao;
 	private String tamanho;
 	private Double litragem;
 	private Double litragemAdicionalPorPeixe;
@@ -102,12 +102,12 @@ public class Peixes {
 		this.phMaximo = phMaximo;
 	}
 
-	public String getAlimentação() {
-		return alimentação;
+	public String getAlimentacao() {
+		return alimentacao;
 	}
 
-	public void setAlimentação(String alimentação) {
-		this.alimentação = alimentação;
+	public void setAlimentacao(String alimentacao) {
+		this.alimentacao = alimentacao;
 	}
 
 	public String getTamanho() {
