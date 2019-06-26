@@ -28,5 +28,5 @@ public class Peixes {
 	private Double litragemAdicionalPorPeixe;
 	private int dificuldade; // 5 o maximo de dificuldade
 	private boolean peixeUnico; // false para aquario comunitario
-
+	private Preco preco;
 }
