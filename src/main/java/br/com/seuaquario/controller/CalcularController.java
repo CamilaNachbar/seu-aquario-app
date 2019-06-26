@@ -1,6 +1,8 @@
 
 package br.com.seuaquario.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -24,6 +26,11 @@ public class CalcularController {
 	@PostMapping(value = "/calcular/litragem")
 	public Aquario calcularDimensoesESubstrato(@RequestBody Dimensoes dimensoes) {
 		return calcular.aquarioDimensoes(dimensoes);
+
+	}
+
+	@PostMapping(value = "/salvar/aquario")
+	public void salvar(@RequestBody List<Aquario> aquario) {
 
 	}
 
