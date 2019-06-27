@@ -22,12 +22,13 @@ public class Peixes {
 	private Comportamento comportamento;
 	private Long phMinimo;
 	private Long phMaximo;
-	private String alimentação;
+	private String alimentacao;
 	private String tamanho;
 	private Double litragem;
 	private Double litragemAdicionalPorPeixe;
 	private int dificuldade; // 5 o maximo de dificuldade
 	private boolean peixeUnico; // false para aquario comunitario
+	private Preco preco;
 
 	public String getCodigoPeixe() {
 		return codigoPeixe;
@@ -101,12 +102,12 @@ public class Peixes {
 		this.phMaximo = phMaximo;
 	}
 
-	public String getAlimentação() {
-		return alimentação;
+	public String getAlimentacao() {
+		return alimentacao;
 	}
 
-	public void setAlimentação(String alimentação) {
-		this.alimentação = alimentação;
+	public void setAlimentacao(String alimentacao) {
+		this.alimentacao = alimentacao;
 	}
 
 	public String getTamanho() {
@@ -147,6 +148,14 @@ public class Peixes {
 
 	public void setPeixeUnico(boolean peixeUnico) {
 		this.peixeUnico = peixeUnico;
+	}
+
+	public Preco getPreco() {
+		return preco;
+	}
+
+	public void setPreco(Preco preco) {
+		this.preco = preco;
 	}
 
 }

@@ -1,4 +1,4 @@
-package br.com.seuaquario;
+/*package br.com.seuaquario;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,3 +14,4 @@ public class SeuAquarioAppApplicationTests {
 	}
 
 }
+*/
