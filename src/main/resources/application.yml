@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://seuaquario:seuaquario1306@ds337377.mlab.com:37377/seu-aquario

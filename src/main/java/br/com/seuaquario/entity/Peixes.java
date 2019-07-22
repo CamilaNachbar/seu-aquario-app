@@ -3,14 +3,12 @@
  */
 package br.com.seuaquario.entity;
 
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import br.com.seuaquario.enums.Comportamento;
 
 /**
  * @author Camila Nachbar - 13 de jun de 2019
  */
-@Document
+//@Document
 public class Peixes {
 
 	private String codigoPeixe;
@@ -24,10 +22,12 @@ public class Peixes {
 	private Long phMaximo;
 	private String alimentacao;
 	private String tamanho;
-	private Double litragem;
-	private Double litragemAdicionalPorPeixe;
+	private Long litragem;
+	private Long litragemAdicionalPorPeixe;
+	private String biotopo;
 	private int dificuldade; // 5 o maximo de dificuldade
 	private boolean peixeUnico; // false para aquario comunitario
+	private boolean cardume; //true torna necessario no minimo 5 individuos
 	private Preco preco;
 
 	public String getCodigoPeixe() {
@@ -118,19 +118,19 @@ public class Peixes {
 		this.tamanho = tamanho;
 	}
 
-	public Double getLitragem() {
+	public Long getLitragem() {
 		return litragem;
 	}
 
-	public void setLitragem(Double litragem) {
+	public void setLitragem(Long litragem) {
 		this.litragem = litragem;
 	}
 
-	public Double getLitragemAdicionalPorPeixe() {
+	public Long getLitragemAdicionalPorPeixe() {
 		return litragemAdicionalPorPeixe;
 	}
 
-	public void setLitragemAdicionalPorPeixe(Double litragemAdicionalPorPeixe) {
+	public void setLitragemAdicionalPorPeixe(Long litragemAdicionalPorPeixe) {
 		this.litragemAdicionalPorPeixe = litragemAdicionalPorPeixe;
 	}
 
@@ -156,6 +156,22 @@ public class Peixes {
 
 	public void setPreco(Preco preco) {
 		this.preco = preco;
+	}
+
+	public String getBiotopo() {
+		return biotopo;
+	}
+
+	public void setBiotopo(String biotopo) {
+		this.biotopo = biotopo;
+	}
+
+	public boolean isCardume() {
+		return cardume;
+	}
+
+	public void setCardume(boolean cardume) {
+		this.cardume = cardume;
 	}
 
 }

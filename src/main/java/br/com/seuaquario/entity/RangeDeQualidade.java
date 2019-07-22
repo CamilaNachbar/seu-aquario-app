@@ -5,12 +5,10 @@ package br.com.seuaquario.entity;
 
 import java.util.Date;
 
-import org.springframework.data.mongodb.core.mapping.Document;
-
 /**
  * @author Camila Nachbar 17 de jun de 2019
  */
-@Document
+//@Document
 public class RangeDeQualidade {
 
 	// calcula o range de qualidade do aquario

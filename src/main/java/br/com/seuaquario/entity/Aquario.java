@@ -5,13 +5,11 @@ package br.com.seuaquario.entity;
 
 import java.util.List;
 
-import org.springframework.data.mongodb.core.mapping.Document;
-
 /**
  * @author Camila Nachbar- 13 de jun de 2019
  */
 
-@Document
+//@Document
 public class Aquario {
 
 	private String id;
