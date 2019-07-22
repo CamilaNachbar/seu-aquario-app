@@ -11,5 +11,6 @@ import br.com.seuaquario.entity.Peixes;
 public interface PeixeRepository extends MongoRepository<Peixes, String> {
 	public List<Peixes> findByNomePopular(String nome);
 	public List<Peixes> findByLitragem(Long litragem);
+	public List<Peixes> findByLitragemLessThan(long litragem);
 
 }

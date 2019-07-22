@@ -21,7 +21,7 @@ public class Peixes {
 	private Long phMinimo;
 	private Long phMaximo;
 	private String alimentacao;
-	private String tamanho;
+	private Long tamanho;
 	private Long litragem;
 	private Long litragemAdicionalPorPeixe;
 	private String biotopo;
@@ -110,11 +110,11 @@ public class Peixes {
 		this.alimentacao = alimentacao;
 	}
 
-	public String getTamanho() {
+	public Long getTamanho() {
 		return tamanho;
 	}
 
-	public void setTamanho(String tamanho) {
+	public void setTamanho(Long tamanho) {
 		this.tamanho = tamanho;
 	}
 
