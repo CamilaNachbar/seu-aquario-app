@@ -3,6 +3,8 @@
  */
 package br.com.seuaquario.entity;
 
+import java.util.List;
+
 import br.com.seuaquario.enums.Comportamento;
 
 /**
@@ -14,6 +16,7 @@ public class Peixes {
 	private String codigoPeixe;
 	private String nomePopular;
 	private String nomeCientifico;
+	private String origem;
 	private String observacoes;
 	private String temperaturaMinima;
 	private String temperaturaMaxima;
@@ -24,11 +27,12 @@ public class Peixes {
 	private Long tamanho;
 	private Long litragem;
 	private Long litragemAdicionalPorPeixe;
-	private String biotopo;
+	private List<Biotopo> biotopo;
 	private int dificuldade; // 5 o maximo de dificuldade
 	private boolean peixeUnico; // false para aquario comunitario
-	private boolean cardume; //true torna necessario no minimo 5 individuos
+	private boolean cardume; // true torna necessario no minimo 5 individuos
 	private Preco preco;
+	private String fonte;
 
 	public String getCodigoPeixe() {
 		return codigoPeixe;
@@ -158,11 +162,11 @@ public class Peixes {
 		this.preco = preco;
 	}
 
-	public String getBiotopo() {
+	public List<Biotopo> getBiotopo() {
 		return biotopo;
 	}
 
-	public void setBiotopo(String biotopo) {
+	public void setBiotopo(List<Biotopo> biotopo) {
 		this.biotopo = biotopo;
 	}
 
@@ -172,6 +176,22 @@ public class Peixes {
 
 	public void setCardume(boolean cardume) {
 		this.cardume = cardume;
+	}
+
+	public String getOrigem() {
+		return origem;
+	}
+
+	public void setOrigem(String origem) {
+		this.origem = origem;
+	}
+
+	public String getFonte() {
+		return fonte;
+	}
+
+	public void setFonte(String fonte) {
+		this.fonte = fonte;
 	}
 
 }
